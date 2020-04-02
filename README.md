@@ -1,6 +1,10 @@
 # Yoga Book C930 Android x86 Installation Guide
 
+**Disclaimer: Even I've tested the process several times, there are still chances you may brick your device or loss data, you are on your own risk.**
+
 You may want to read the [Official Installation Guide](https://www.android-x86.org/installhowto.html) first.
+
+If you are familiar with the installation process, you may just want grab the [android.cfg](efi/boot/android.cfg) and do it yourself.
 
 ## Download Installation Media
 
@@ -16,7 +20,7 @@ The following steps can be done in any Windows machine, not necessary your C930.
 
 2. Download [Rufus](https://rufus.ie/).
 
-3. Burn the ISO to the USB (all data in the USB will be erased).
+3. Burn the ISO to the USB disk (all data in the USB will be erased).
 
    ![Rufus](images/01-rufus.jpg)
 
@@ -30,9 +34,11 @@ The following steps can be done in any Windows machine, not necessary your C930.
 1. Boot to BIOS Configuration
 
 2. Turn off the Secure Boot
+
    ![Secure Boot](images/03-secure-boot.jpg)
 
 3. Turn on the USB Boot
+
    ![USB Boot](images/04-usb-boot.jpg)
 
 ## Install Android x86
