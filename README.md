@@ -6,6 +6,24 @@ You may want to read the [Official Installation Guide](https://www.android-x86.o
 
 If you are familiar with the installation process, you may just want grab the [android.cfg](efi/boot/android.cfg) and do it yourself.
 
+## Status
+
+### Works
+
+- Wifi
+- Keyboard
+- Rotation
+- Sound
+- Bluetooth
+- Backlight
+- Pen
+
+### Doesn't Work
+
+- Sleep - you cannot turn off the screen
+- Wifi - stop working after Sleep timeout
+- Figure Print
+
 ## Download Installation Media
 
 Download the [latest android x86](https://www.android-x86.org/download.html) iso. By the time this guide was created, the latest version is 9.0 r2. The full file name this guide use is: **android-x86_64-9.0-r2.iso**.
@@ -61,11 +79,11 @@ The following steps can be done in any Windows machine, not necessary your C930.
 
 5. Select **Android-x86 9.0-r2 Installation** to proceed if you want to install Android in your C930.
 
-6. In the Choose Partition screen, select a partition you want install to, Android x86 can **co-exist with your Windows file system**.
+6. In the **Choose Partition** screen, select a partition you want install to, Android x86 can **co-exist with your Windows file system**.
 
    ![Choose Partition](images/06-choose-partition.jpg)
 
-7. **This is very important**, in the Choose filesystem screen, choose **Do not re-format**.
+7. **This is very important**, in the **Choose filesystem** screen, choose **Do not re-format**.
 
    ![Format Partition](images/07-format.jpg)
 
@@ -84,3 +102,5 @@ The following steps can be done in any Windows machine, not necessary your C930.
 12. Refer to Step 2 when you want to run Android, but in this time, select **Android** but not the USB device name.
 
     ![Boot to Android](images/10-boot-to-android.jpg)
+
+13. When you switch to Windows, you will find **android-9.0-r2** folder in the installed partition, all the android files are there, which is very nice.
