@@ -4,13 +4,13 @@
 
 You may want to read the [Official Installation Guide](https://www.android-x86.org/installhowto.html) first.
 
-If you are familiar with the installation process, you may just want grab the [android.cfg](efi/boot/android.cfg) and do it yourself.
+If you are familiar with the installation process, you may just want grab the [android.cfg](EFI/BOOT/android.cfg) and do it yourself.
 
 ## Status
 
 ### Works
 
-- Wifi
+- WiFi
 - Keyboard
 - Rotation
 - Sound
@@ -20,19 +20,22 @@ If you are familiar with the installation process, you may just want grab the [a
 
 ### Doesn't Work
 
-- Sleep - you cannot turn off the screen
-- Wifi - stop working after Sleep timeout
+- Camera
 - Figure Print
+- Sleep - you cannot turn off the screen
+- WiFi - stop working after Sleep timeout
+
+  When WiFi is done, bring up the built-in app **Dev Tools** > Select **Connectivity** > Click **DISABLE WIFI** (Yes, not ENABLE). The screen will flash for a second, and WiFi should back to normal.
 
 ## Download Installation Media
 
 Download the [latest android x86](https://www.android-x86.org/download.html) iso. By the time this guide was created, the latest version is 9.0 r2. The full file name this guide use is: **android-x86_64-9.0-r2.iso**.
 
-**Please note**, you may not want the k49 version. The rotation is not working in C930.
+**Please note**, you may not want the k49 version. The rotation is not working in Yoga Book C930.
 
 ## Create Bootable USB Disk
 
-The following steps can be done in any Windows machine, not necessary your C930.
+The following steps can be done in any Windows machine, not necessary your Yoga Book C930.
 
 1. Prepare a 2GB+ USB disk.
 
@@ -42,7 +45,7 @@ The following steps can be done in any Windows machine, not necessary your C930.
 
    ![Rufus](images/01-rufus.jpg)
 
-4. After Rufus done its job. Download [android.cfg](efi/boot/android.cfg) and replace the efi/boot/android.cfg in USB disk.
+4. After Rufus done its job. Download [android.cfg](EFI/BOOT/android.cfg) and replace the efi/boot/android.cfg in USB disk.
 
    If you are curious or want to make the change by yourself, here is what you need to do:
    ![android.cfg changes](images/02-boot-diff.jpg)
@@ -61,7 +64,7 @@ The following steps can be done in any Windows machine, not necessary your C930.
 
 ## Install Android x86
 
-1. Plug the USB disk to your C930
+1. Plug the USB disk to your Yoga Book C930
 
 2. There are 3 ways to get the Android booted
 
@@ -69,7 +72,7 @@ The following steps can be done in any Windows machine, not necessary your C930.
 
       In the boot screen, choose **Use a device** and then choose your USB device name. If USB disk is not listed, use method 2.
 
-   2. Shutdown you C930, hold the **Volume Up** button, and then press Power Button, release Volume Up button when you see the Boot Menu.
+   2. Shutdown you Yoga Book C930, hold the **Volume Up** button, and then press Power Button, release Volume Up button when you see the Boot Menu.
 
 3. Now, you should see the Android x86 boot screen **in portrait**.
 
@@ -77,7 +80,7 @@ The following steps can be done in any Windows machine, not necessary your C930.
 
 4. Select **Android-x86 9.0-r2 Live** if you just want to try it out.
 
-5. Select **Android-x86 9.0-r2 Installation** to proceed if you want to install Android in your C930.
+5. Select **Android-x86 9.0-r2 Installation** to proceed if you want to install Android in your Yoga Book C930.
 
 6. In the **Choose Partition** screen, select a partition you want install to, Android x86 can **co-exist with your Windows file system**.
 
