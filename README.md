@@ -17,15 +17,14 @@ If you are familiar with the installation process, you may just want grab the [a
 - Bluetooth
 - Backlight
 - Pen
+- Sleep (with Vulkan support)
+
+  **NOTE**: When boot android, select **Advanced options** > **Android-x86 9.0-r2 - Vulkan support (experimental)**, when boot with Vulkan, both WiFi and Sleep works fine. Otherwise, the screen won't turn off and WiFi will done when the device tried to sleep.
 
 ### Doesn't Work
 
 - Camera
 - Figure Print
-- Sleep - you cannot turn off the screen
-- WiFi - stop working after Sleep timeout
-
-  When WiFi is done, bring up the built-in app **Dev Tools** > Select **Connectivity** > Click **DISABLE WIFI** (Yes, not ENABLE). The screen will flash for a second, and WiFi should back to normal.
 
 ## Download Installation Media
 
